@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+<aside id="tagEditor">
+    <form name="tagEditor">
+        <label for="tagName">Enter tag:</label>
+        <div class="input-group">
+            <input type="text" name="tagName" id="tagName">
+            <button type="submit">+</button>
+        </div>
+    </form>
+    <div id="tagList">
+    </div>
+</aside>
+<section id="tagUser">
+    <form name="tagUser">
+        <label for="tagInput">Choose tag:</label>
+        <div class="input-group">
+            <input type="text" name="tagInput" id="tagInput" list="tagOptions">
+            <datalist id="tagOptions">
+            </datalist>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+    <div id="selectedTags"></div>
+</section>
+</body>
+</html>

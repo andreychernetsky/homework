@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+}
+
+#tagEditor {
+    flex: 0 0 20%;
+    padding: 20px;
+    border-right: 2px solid #000;
+}
+
+#tagEditor .input-group,
+#tagUser .input-group {
+    display: flex;
+}
+
+#tagEditor .input-group input,
+#tagUser .input-group input {
+    flex: 1 1 auto;
+    margin-right: 10px;
+}
+
+#tagEditor .input-group button,
+#tagUser .input-group button {
+    flex: 0 0 40px;
+}
+
+#tagUser {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    margin: 5px 5px 0 0;
+}
+
+.tag .tag-title {
+    margin-right: 5px;
+}
+
+.tag button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
